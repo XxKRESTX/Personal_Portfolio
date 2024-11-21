@@ -46,9 +46,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-Light';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
        font-weight: 300;
        font-display: swap;
        font-style: normal;
@@ -58,9 +58,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-Regular';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
        font-weight: 400;
        font-display: swap;
        font-style: normal;
@@ -69,9 +69,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-Italic';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Italic.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Italic.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Italic.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Italic.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Italic.ttf') format('truetype');
        font-weight: 400;
        font-display: swap;
        font-style: italic;
@@ -80,9 +80,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-Medium';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
        font-weight: 500;
        font-display: swap;
        font-style: normal;
@@ -91,9 +91,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-MediumItalic';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-MediumItalic.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-MediumItalic.ttf') format('truetype');
        font-weight: 500;
        font-display: swap;
        font-style: italic;
@@ -102,9 +102,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-Bold';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
        font-weight: 700;
        font-display: swap;
        font-style: normal;
@@ -114,9 +114,9 @@ opacity: 80%;
 
 @font-face {
   font-family: 'Satoshi-Black';
-  src: url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Black.woff') format('woff'),
-       url('./fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
+  src: url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Black.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
        font-weight: 900;
        font-display: swap;
        font-style: normal;
@@ -124,7 +124,7 @@ opacity: 80%;
 
 @font-face {
    font-family: 'PierSans-Black';
-   src: url('./fonts/PierSans-FreeForPersonalUse/PierSans-Black.otf') format('opentype');
+   src: url('/fonts/PierSans-FreeForPersonalUse/PierSans-Black.otf') format('opentype');
         font-weight: 900;
         font-display: swap;
         font-style: normal;
@@ -132,7 +132,7 @@ opacity: 80%;
 
  @font-face {
    font-family: 'PierSans-Bold';
-   src: url('./fonts/PierSans-FreeForPersonalUse/PierSans-Bold.otf') format('opentype');          
+   src: url('/fonts/PierSans-FreeForPersonalUse/PierSans-Bold.otf') format('opentype');          
         font-weight: 900;
         font-display: swap;
         font-style: normal;
@@ -141,7 +141,7 @@ opacity: 80%;
 
  @font-face {
    font-family: 'PierSans-Light';
-   src: url('./fonts/PierSans-FreeForPersonalUse/PierSans-Light.otf') format('opentype');
+   src: url('/fonts/PierSans-FreeForPersonalUse/PierSans-Light.otf') format('opentype');
         font-weight: 900;
         font-display: swap;
         font-style: normal;
@@ -149,7 +149,7 @@ opacity: 80%;
 
  @font-face {
    font-family: 'PierSans-Medium';
-   src: url('./fonts/PierSans-FreeForPersonalUse/PierSans-Medium.otf') format('opentype');
+   src: url('/fonts/PierSans-FreeForPersonalUse/PierSans-Medium.otf') format('opentype');
         font-weight: 900;
         font-display: swap;
         font-style: normal;
@@ -157,7 +157,7 @@ opacity: 80%;
 
  @font-face {
    font-family: 'PierSans-Regular';
-   src: url('./fonts/PierSans-FreeForPersonalUse/PierSans-Regular.otf') format('opentype');
+   src: url('/fonts/PierSans-FreeForPersonalUse/PierSans-Regular.otf') format('opentype');
         font-weight: 900;
         font-display: swap;
         font-style: normal;
