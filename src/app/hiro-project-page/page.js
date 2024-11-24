@@ -12,7 +12,7 @@ export default function Hiro() {
   const infoItems = [
     { label: 'Tools', value: 'Figma, HTML, CSS and JavaScript' },
     { label: 'Timeline', value: 'Oct 2024 - Nov 2024' },
-    { label: 'Members', value: 'Shixuan, Nathan' },
+    { label: 'Members', value: 'Nathan (Designer & Developer), Shixuan (Developer)' },
     { label: 'Responsibilities', value: 'UI/UX Design & Web Development' },
   ];
   const profileData = {
@@ -40,9 +40,11 @@ export default function Hiro() {
         <section className="flex flex-col gap-10 relative mb-20">   
           <NavBar />
           <div className="flex flex-col justify-center gap-4">
-            <h1 className="text-white font-display text-2xl">Hiro</h1>
+            <h1 className="text-white font-display text-3xl">Hiro</h1>
+            <p className='text-whtie font-satoshilight text-sm'>The Hiro Bikes website offers a user-friendly platform for cycling enthusiasts & newcomers.</p>
             <ComputerMockup />
           </div>
+          <img src='../../Finished_mockup.jpg' alt='a screenshot of the hiro website'></img>
           <div className="flex items-center justify-center bg-black">
             <InfoSection items={infoItems} />
           </div>
@@ -53,8 +55,8 @@ export default function Hiro() {
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Overview</h1>
-              <p className="text-white font-body">
-                The Hiro Bikes e-commerce website offers a user-friendly platform for cycling enthusiasts. The site showcases various models, including road, mountain, sport, and casual bikes, each accompanied by images and brief descriptions.
+              <p className="text-white font-body text-sm">
+              The Hiro Bikes website was developed as the second major project for IAT 339: Web Development, focusing on creating a seamless and user-friendly e-commerce platform  for cycling enthusiasts. The project emphasizes responsive design, ensuring the site adapts beautifully and functions optimally across  desktops, tablets, and smartphones. As I as the main developer and designer, I showcased a curated selection of bike models, including road, mountain, sport, and casual bikes, using  high-quality images and concise descriptions across various screen sizes. 
               </p>
             </div>
             <BottomArrows />
@@ -68,44 +70,28 @@ export default function Hiro() {
               <h1 className="text-white font-display text-2xl">Research</h1>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Design Objectives</h2>
-                <p className="font-body text-white font-base">
-                  The Hiro Bikes e-commerce website offers a user-friendly platform for cycling enthusiasts. The site showcases various models, including road, mountain, sport, and casual bikes, each accompanied by images and brief descriptions.
-                </p>
+                <p className="font-body text-white text-sm">
+                My role involved ensuring the site provided a seamless and engaging shopping experience across all devices, with a focus on showcasing products effectively while promoting Hiro’s brand values. By designing and coding the homepage, I emphasized creating a visually appealing and intuitive interface that adapts to various screen sizes, enabling users to explore and interact with Hiro’s range of bicycles effortlessly.                </p>
               </div>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Competitive Analysis</h2>
-                <p className="font-body text-white font-base">
-                  We reviewed leading bike and outdoor e-commerce sites to understand successful layout patterns, including streamlined navigation, strong visual branding, and information hierarchy.
+                <p className="font-body text-white text-sm">
+                  I reviewed leading e-commerce websites to identify key elements like streamlined navigation, strong branding, and clear information hierarchy.
                 </p>
                 <figure className='pt-8'>
-                  <img src="../../../fuji_bikes_analysis.svg" alt="screen shot home page of fujibikes.com" className='w-full'/>
-                  <figcaption>Referenced from <a href="https://www.fujibikes.com/">https://www.fujibikes.com/</a></figcaption>
-                </figure>
-                <figure className='pt-8'>
-                  <img src="../../../bicicletta_analysis.svg" alt="screen shot home page of bicicletta.cc" className='w-full'/>
-                  <figcaption>Referenced from <a href="https://bicicletta.cc/">https://bicicletta.cc/</a></figcaption>
+                  <img src="../../../competitive_analysis.jpg" alt="screen shot of competitive analysis" className='w-full'/>
                 </figure>
               </div>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Takeaways</h2>
-                <p className="font-body text-white font-base">
-                  The website redesign emphasized Hiro&#39;s brand identity by showcasing the logo prominently and providing more information about the brand&#39;s core values. We highlighted essential sections for &quot;Gear&quot; and &quot;Bikes,&quot; helping users easily explore the various types of gear and bikes available for different cycling needs.
-                </p>
+                <p className="font-body text-white text-sm">
+                With users increasingly accessing websites from mobile devices, the Hiro homepage needed to adapt seamlessly to various screen sizes without  compromising usability or aesthetics. The challenge was to maintain the site's functionality, visual hierarchy, and branding across desktops,  tablets, and smartphones.                </p>
               </div>
+ 
               <div className="my-4">
-                <h2 className="font-piersansmedium text-white text-xl">User Personas</h2>
-                <p className="font-body text-white font-base">
-                  To better understand our website goals, I created user personas to represent our target audience. This allows me to create specific product decisions and also find out about their goals and needs.
-                </p>
-                <div className="flex items-center justify-center">
-                  <UserPersona {...profileData} />
-                </div>
-              </div>
-              <div className="my-4">
-                <h2 className="font-piersansmedium text-white text-xl">Problems</h2>
-                <p className="font-body text-white font-base">
-                  To define the problem, I needed to design a brand identity to cater towards experts and newcomers alike. Furthermore, I needed to include bike types for streamlining users for an easier choice and include a place to find high-performance gear.
-                </p>
+                <h2 className="font-piersansmedium text-white text-xl">Problem</h2>
+                <p className="font-body text-white text-sm">
+                To define the problem, I needed to design a website to adapt to various screen sizes without compromising usability or design.</p>
               </div>
             </div>
             <BottomArrows />
@@ -116,35 +102,99 @@ export default function Hiro() {
             <p className="text-orange font-body text-sm">03</p>
             <TopArrows />
             <div className="p-4">
-              <div>
+              <div className='flex flex-row gap-2'>
                 <img src="../../../design_logo.svg" alt="block logo" />
                 <h1 className="text-white font-display text-2xl">Design</h1>
               </div>
-              <p className="text-white font-body">
-                After conceptualizing a design direction, I began crafting wireframes to visualize my intentions for the layout and content. This primarily focused on the problems and several other key features I aimed to incorporate for a cohesive website experience.
-              </p>
-              <div className="my-4">
-                <h2 className="font-piersansmedium text-white text-xl">Low/Mid Fidelity</h2>
-                
-                <p className="font-body text-white font-base">
-                  The website redesign emphasized Hiro&#39;s brand identity by showcasing the logo prominently and providing more information about the brand&#39;s core values. We highlighted essential sections for &quot;Gear&quot; and &quot;Bikes,&quot; helping users easily explore the various types of gear and bikes available for different cycling needs.
-                </p>
+              <p className="text-white font-body text-sm">
+              There were a few things first that I needed to 
+              design before coding. For example, designing pages that fit seamlessly within mobile to desktop resolutions.</p>
+              <div className="flex flex-col my-4 gap-4">
+                <img src='../../../low_mockups.jpg' alt='figma low mockups of hiro'></img>               
+                <img src='../../../mid mockup whole.jpg' alt='figma medium mockups of hiro'></img>               
               </div>
-              <img src="../../../final_home_img.svg" alt="final home page of hiro website" className='pt-8'/>
-              <p className="text-white font-body pt-8">The final website design focused on enhancing interactions and accessibility through hover and focus effects, reinforcing brand identity with a clear logotype and emphasis on core values, and improving navigation that highlights different types of gear and bikes. </p>
+              <div className="flex flex-col gap-2 pt-8">
+                <h2 className='font-piersansmedium text-white text-xl'>Style Guide</h2>
+                <img src="../../../style_guide.jpg" alt="hiro style guide" className='w-full'/>
+              </div>
+              <div className="pt-8">
+                <h2 className='font-piersansmedium text-white text-xl pt-8'>Development</h2>
+                <div>
+                  <img src="../../../mobile_final.jpg" alt="final about us page mobile version" className='w-full'/>
+                  <h3 className='font-piersansmedium text-white'>Mobile</h3>
+                  <ul>
+                    <li className="text-white font-body text-sm pt-4">Single-column layout for categories</li>
+                    <li className="text-white font-body text-sm pt-4">Consistent readable fonts and clear color contrast</li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="../../../tablet_final.jpg" alt="final about us page tablet version" className='w-full'/>
+                  <h3 className='font-piersansmedium text-white'>Tablet</h3>
+                  <ul>
+                    <li className="text-white font-body text-sm pt-4">Two-column grids for products to balance content density and readability.</li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="../../../desktop_final.jpg" alt="final about us page desktop version" className='w-full'/>
+                  <h3 className='font-piersansmedium text-white'>Desktop</h3>
+                  <ul>
+                    <li className="text-white font-body text-sm pt-4">Effective use of layout</li>
+                  </ul>
+                </div>
+              </div>
+              <div className='flex flex-col gap-4 pt-8'>
+                <h2 className='font-piersansmedium text-white text-xl'>Key Features</h2>
+                <div>
+                  <h3 className='font-piersansmedium text-white'>Flexible Layouts</h3>
+                  <p className="text-white font-body text-sm pt-4">Utilized CSS Grid and Flexbox to create layouts that adapt seamlessly to different screen sizes. </p>
+                </div>
+                <div>
+                  <h3 className='font-piersansmedium text-white'>Fluid Images</h3>
+                  <p className="text-white font-body text-sm pt-4">Used 
+                    max-width: 100%; 
+                    height:auto; 
+                    to ensure images resize proportionally without losing quality.</p>
+                </div>
+                <div>
+                  <h3 className='font-piersansmedium text-white'>Media Queries</h3>
+                  <p className="text-white font-body text-sm pt-4">Developed CSS rules for specific breakpoints, enabling tailored styles for devices like desktops, tablets, and smartphones.</p>
+                </div>
+                <div>
+                  <h3 className='font-piersansmedium text-white'>Accessibility Check</h3>
+                  <p className="text-white font-body text-sm pt-4">Used Google Lighthouse to assess accessibility and ensure the design adhered to best practices for inclusivity.</p>
+                  <div className='flex flex-col gap-4 max-w-fit pt-4'>                  
+                    <img src='../../../accesbility_check1.jpg' alt='' className=' h-auto'></img>
+                    <img src='../../../best_practices1.jpg' alt='' className='h-auto'></img>
+                  </div>
+                  <p className="text-white font-body text-sm pt-4">The final website design prioritized responsive layouts. I ensured high-quality visuals tailored to various screen sizes, and reinforced brand identity with consistent aesthetics and concise content presentation. Accessibility was further enhanced using Google Lighthouse to optimize for inclusivity.</p>
+                </div>
+              </div>
+            </div>
+            <BottomArrows />
+          </div>
+        </section>
+        <section id="Challenges">
+          <div className="relative h-fit py-4 my-4">
+            <p className="text-orange font-body text-sm">04</p>
+            <TopArrows />
+            <div className="p-4">
+              <h1 className="text-white font-display text-2xl">Challenges</h1>
+              <p className="text-white font-body text-sm">
+              Given that I had only one month to design and code Hiro Bikes,there were a few limitations I encountered. My limited experience with JavaScript prevented me from implementing a menu for mobile navigation, which I would prioritize in future projects. Additionally, I regret not fully optimizing the website for web images. Leveraging features like the srcset attribute would have improved page optimization and significantly reduced loading  times, especially on mobile devices. These challenges highlight areas I’m eager to refine in future projects to create better designs.</p>
             </div>
             <BottomArrows />
           </div>
         </section>
         <section id="reflection">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm">04</p>
+            <p className="text-orange font-body text-sm">05</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Reflection</h1>
-              <p className="text-white font-body">
-              Throughout the design process, I focused on creating a user-centered experience that would make it easy for visitors to explore Hiro’s range of bikes and accessories. One of the main challenges was ensuring that the website would appeal to a diverse range of users , from beginners to avid cyclists, maintaining simplicity and ease of use. This project strengthened my skills in usability testing, prototyping, and aligning brand values with design elements, all of which helps me approach a more UX mindset before diving into designs. Can’t wait for the next project!
-              </p>
+              <p className="text-white font-body text-sm">
+              This project strengthened my skills in usability testing, prototyping, and  aligning design with brand values, while shaping my UX mindset to  prioritize user needs. Challenges like limited JavaScript knowledge and missed opportunities for image optimization highlighted areas for  growth, motivating me to expand my technical skills and focus on  performance optimization.
+
+              Looking ahead, I aim to enhance accessibility, improve mobile performance, and explore advanced  interactivity to create inclusive, responsive designs. Building on these lessons, I’m excited to tackle new challenges and deliver impactful user experiences in future projects.              </p>
             </div>
             <BottomArrows />
           </div>

@@ -32,7 +32,9 @@ max-width: 100%;
 
 .custom-navbar ul{
 background-color: transparent;
+
 }
+
 
 a:focus {
 outline: 2px solid #ff6347; /* Add a focus outline for accessibility */
