@@ -85,7 +85,7 @@ export default function Hiro() {
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Takeaways</h2>
                 <p className="font-body text-white text-sm">
-                With users increasingly accessing websites from mobile devices, the Hiro homepage needed to adapt seamlessly to various screen sizes without  compromising usability or aesthetics. The challenge was to maintain the site's functionality, visual hierarchy, and branding across desktops,  tablets, and smartphones.                </p>
+                With users increasingly accessing websites from mobile devices, the Hiro homepage needed to adapt seamlessly to various screen sizes without  compromising usability or aesthetics. The challenge was to maintain the site&apos;s functionality, visual hierarchy, and branding across desktops,  tablets, and smartphones.</p>
               </div>
  
               <div className="my-4">
