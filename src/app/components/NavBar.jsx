@@ -43,7 +43,7 @@ export default function App() {
           <Logo />
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="../App.jsx">
+          <Link color="foreground" href="/">
             Home
           </Link>
         </NavbarItem>

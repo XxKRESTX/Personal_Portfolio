@@ -7,7 +7,7 @@ export default function InfoSection({ items }) {
       {items.map((item, index) => (
         <React.Fragment key={index}>
           <div className="font-piersansmedium">{item.label}</div>
-          <div className="font-satoshilight text-sm">{item.value}</div>
+          <div className="font-satoshilight text-sm md:text-base">{item.value}</div>
         </React.Fragment>
       ))}
     </div>

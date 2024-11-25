@@ -4,7 +4,6 @@ import ComputerMockup from '../components/ComputerMockup';
 import InfoSection from '../components/InfoSection';
 import TopArrows from '../components/TopArrows';
 import BottomArrows from '../components/BottomArrows';
-import UserPersona from '../components/UserPersona';
 import TopCornerBlack from '../components/TopCardArrowBlack';
 import BottomCornerBlack from '../components/BottomCardArrowBlack';
 
@@ -15,28 +14,12 @@ export default function Hiro() {
     { label: 'Members', value: 'Nathan (Designer & Developer), Shixuan (Developer)' },
     { label: 'Responsibilities', value: 'UI/UX Design & Web Development' },
   ];
-  const profileData = {
-    imageSrc: '/assets/profile_img1.svg',
-    name: 'Emma Peterson',
-    age: 35,
-    occupation: 'Outdoor Photographer',
-    location: 'Vancouver, BC',
-    cyclingExperience: 'Intermediate',
-    background: 'Emma is a nature enthusiast who spends weekends exploring trails and capturing outdoor landscapes. She cycles primarily on mountain trails and values durable and well-made bikes.',
-    goals: [
-      'Find a city bike that is low-maintenance and easy to handle in traffic.',
-      'Purchase essential commuter gear (e.g., helmet, lock, lights).',
-      'Learn more about cycling best practices for urban areas.'
-    ],
-    preferredFeatures: [
-      'Overwhelmed by too many product options.',
-      'Difficulty finding reliable information about city bikes suitable for beginners.'
-    ]
-  };
 
   return (
     <>
-      <div className="bg-black w-screen h-full relative p-6 scroll-smooth">
+      <div className="flex bg-black h-full relative p-6 scroll-smooth justify-center">
+      <div className='max-w-3xl'>
+        
         <section className="flex flex-col gap-10 relative mb-20">   
           <NavBar />
           <div className="flex flex-col justify-center gap-4">
@@ -51,11 +34,11 @@ export default function Hiro() {
         </section>
         <section id="overview">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm">01</p>
+            <p className="text-orange font-body text-sm sm:text-base">01</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Overview</h1>
-              <p className="text-white font-body text-sm">
+              <p className="text-white font-body text-sm sm:text-base">
               The Hiro Bikes website was developed as the second major project for IAT 339: Web Development, focusing on creating a seamless and user-friendly e-commerce platform  for cycling enthusiasts. The project emphasizes responsive design, ensuring the site adapts beautifully and functions optimally across  desktops, tablets, and smartphones. As I as the main developer and designer, I showcased a curated selection of bike models, including road, mountain, sport, and casual bikes, using  high-quality images and concise descriptions across various screen sizes. 
               </p>
             </div>
@@ -64,18 +47,18 @@ export default function Hiro() {
         </section>
         <section id="research">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm">02</p>
+            <p className="text-orange font-body text-sm sm:text-base">02</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Research</h1>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Design Objectives</h2>
-                <p className="font-body text-white text-sm">
+                <p className="font-body text-white text-sm sm:text-base">
                 My role involved ensuring the site provided a seamless and engaging shopping experience across all devices, with a focus on showcasing products effectively while promoting Hiro’s brand values. By designing and coding the homepage, I emphasized creating a visually appealing and intuitive interface that adapts to various screen sizes, enabling users to explore and interact with Hiro’s range of bicycles effortlessly.                </p>
               </div>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Competitive Analysis</h2>
-                <p className="font-body text-white text-sm">
+                <p className="font-body text-white text-sm sm:text-base">
                   I reviewed leading e-commerce websites to identify key elements like streamlined navigation, strong branding, and clear information hierarchy.
                 </p>
                 <figure className='pt-8'>
@@ -84,13 +67,13 @@ export default function Hiro() {
               </div>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Takeaways</h2>
-                <p className="font-body text-white text-sm">
+                <p className="font-body text-white text-sm sm:text-base">
                 With users increasingly accessing websites from mobile devices, the Hiro homepage needed to adapt seamlessly to various screen sizes without  compromising usability or aesthetics. The challenge was to maintain the site&apos;s functionality, visual hierarchy, and branding across desktops,  tablets, and smartphones.</p>
               </div>
  
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Problem</h2>
-                <p className="font-body text-white text-sm">
+                <p className="font-body text-white text-sm sm:text-base">
                 To define the problem, I needed to design a website to adapt to various screen sizes without compromising usability or design.</p>
               </div>
             </div>
@@ -99,14 +82,14 @@ export default function Hiro() {
         </section>
         <section id="design">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm">03</p>
+            <p className="text-orange font-body text-sm sm:text-base">03</p>
             <TopArrows />
             <div className="p-4">
               <div className='flex flex-row gap-2'>
                 <img src="../../../design_logo.svg" alt="block logo" />
                 <h1 className="text-white font-display text-2xl">Design</h1>
               </div>
-              <p className="text-white font-body text-sm">
+              <p className="text-white font-body text-sm sm:text-base">
               There were a few things first that I needed to 
               design before coding. For example, designing pages that fit seamlessly within mobile to desktop resolutions.</p>
               <div className="flex flex-col my-4 gap-4">
@@ -146,27 +129,27 @@ export default function Hiro() {
                 <h2 className='font-piersansmedium text-white text-xl'>Key Features</h2>
                 <div>
                   <h3 className='font-piersansmedium text-white'>Flexible Layouts</h3>
-                  <p className="text-white font-body text-sm pt-4">Utilized CSS Grid and Flexbox to create layouts that adapt seamlessly to different screen sizes. </p>
+                  <p className="text-white font-body text-sm pt-4 sm:text-base">Utilized CSS Grid and Flexbox to create layouts that adapt seamlessly to different screen sizes. </p>
                 </div>
                 <div>
                   <h3 className='font-piersansmedium text-white'>Fluid Images</h3>
-                  <p className="text-white font-body text-sm pt-4">Used 
+                  <p className="text-white font-body text-sm pt-4 sm:text-base">Used 
                     max-width: 100%; 
                     height:auto; 
                     to ensure images resize proportionally without losing quality.</p>
                 </div>
                 <div>
                   <h3 className='font-piersansmedium text-white'>Media Queries</h3>
-                  <p className="text-white font-body text-sm pt-4">Developed CSS rules for specific breakpoints, enabling tailored styles for devices like desktops, tablets, and smartphones.</p>
+                  <p className="text-white font-body text-sm pt-4 sm:text-base">Developed CSS rules for specific breakpoints, enabling tailored styles for devices like desktops, tablets, and smartphones.</p>
                 </div>
                 <div>
                   <h3 className='font-piersansmedium text-white'>Accessibility Check</h3>
-                  <p className="text-white font-body text-sm pt-4">Used Google Lighthouse to assess accessibility and ensure the design adhered to best practices for inclusivity.</p>
+                  <p className="text-white font-body text-sm pt-4 sm:text-base">Used Google Lighthouse to assess accessibility and ensure the design adhered to best practices for inclusivity.</p>
                   <div className='flex flex-col gap-4 max-w-fit pt-4'>                  
                     <img src='../../../accesbility_check1.jpg' alt='' className=' h-auto'></img>
                     <img src='../../../best_practices1.jpg' alt='' className='h-auto'></img>
                   </div>
-                  <p className="text-white font-body text-sm pt-4">The final website design prioritized responsive layouts. I ensured high-quality visuals tailored to various screen sizes, and reinforced brand identity with consistent aesthetics and concise content presentation. Accessibility was further enhanced using Google Lighthouse to optimize for inclusivity.</p>
+                  <p className="text-white font-body text-sm pt-4 sm:text-base">The final website design prioritized responsive layouts. I ensured high-quality visuals tailored to various screen sizes, and reinforced brand identity with consistent aesthetics and concise content presentation. Accessibility was further enhanced using Google Lighthouse to optimize for inclusivity.</p>
                 </div>
               </div>
             </div>
@@ -175,11 +158,11 @@ export default function Hiro() {
         </section>
         <section id="Challenges">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm">04</p>
+            <p className="text-orange font-body text-sm sm:text-base">04</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Challenges</h1>
-              <p className="text-white font-body text-sm">
+              <p className="text-white font-body text-sm sm:text-base">
               Given that I had only one month to design and code Hiro Bikes,there were a few limitations I encountered. My limited experience with JavaScript prevented me from implementing a menu for mobile navigation, which I would prioritize in future projects. Additionally, I regret not fully optimizing the website for web images. Leveraging features like the srcset attribute would have improved page optimization and significantly reduced loading  times, especially on mobile devices. These challenges highlight areas I’m eager to refine in future projects to create better designs.</p>
             </div>
             <BottomArrows />
@@ -187,11 +170,11 @@ export default function Hiro() {
         </section>
         <section id="reflection">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm">05</p>
+            <p className="text-orange font-body text-sm sm:text-base">05</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Reflection</h1>
-              <p className="text-white font-body text-sm">
+              <p className="text-white font-body text-sm sm:text-base">
               This project strengthened my skills in usability testing, prototyping, and  aligning design with brand values, while shaping my UX mindset to  prioritize user needs. Challenges like limited JavaScript knowledge and missed opportunities for image optimization highlighted areas for  growth, motivating me to expand my technical skills and focus on  performance optimization.
 
               Looking ahead, I aim to enhance accessibility, improve mobile performance, and explore advanced  interactivity to create inclusive, responsive designs. Building on these lessons, I’m excited to tackle new challenges and deliver impactful user experiences in future projects.              </p>
@@ -199,8 +182,11 @@ export default function Hiro() {
             <BottomArrows />
           </div>
         </section>
+        </div> 
       </div>
-      <footer className="h-fit bg-white p-6">
+      
+      <div className='flex justify-center bg-white'>
+      <footer className="max-w-3xl w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
           <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by!</h1>
@@ -230,7 +216,9 @@ export default function Hiro() {
           </div>
           <BottomCornerBlack />
         </div>
+       
       </footer>
+      </div>
     </>
   );
 }
