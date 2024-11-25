@@ -27,18 +27,18 @@ export default function App() {
       className="custom-navbar bg-transparent" 
     >
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="md:hidden pr-3" justify="center">
             <NavbarBrand>
             <Logo />
             </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden" justify="end">
+      <NavbarContent className="md:hidden" justify="end">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
 
 
-      <NavbarContent className="hidden sm:flex gap-4 font-piersansmedium" justify="end">
+      <NavbarContent className="hidden md:flex gap-4 font-piersansmedium " justify="end">
         <NavbarBrand>
           <Logo />
         </NavbarBrand>
@@ -67,7 +67,7 @@ export default function App() {
 
       <NavbarMenu className="bg-black">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item}-${index}`} className="pt-4">
             <Link
               className="w-full text-white"
               href="#"

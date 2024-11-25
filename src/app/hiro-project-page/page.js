@@ -41,7 +41,7 @@ export default function Hiro() {
           <NavBar />
           <div className="flex flex-col justify-center gap-4">
             <h1 className="text-white font-display text-3xl">Hiro</h1>
-            <p className='text-whtie font-satoshilight text-sm'>The Hiro Bikes website offers a user-friendly platform for cycling enthusiasts & newcomers.</p>
+            <p className='text-whtie font-satoshilight text-sm sm:text-base'>The Hiro Bikes website offers a user-friendly platform for cycling enthusiasts & newcomers.</p>
             <ComputerMockup />
           </div>
           <img src='../../Finished_mockup.jpg' alt='a screenshot of the hiro website'></img>
@@ -122,7 +122,7 @@ export default function Hiro() {
                 <div>
                   <img src="../../../mobile_final.jpg" alt="final about us page mobile version" className='w-full'/>
                   <h3 className='font-piersansmedium text-white'>Mobile</h3>
-                  <ul>
+                  <ul className='py-8'>
                     <li className="text-white font-body text-sm pt-4">Single-column layout for categories</li>
                     <li className="text-white font-body text-sm pt-4">Consistent readable fonts and clear color contrast</li>
                   </ul>
@@ -130,14 +130,14 @@ export default function Hiro() {
                 <div>
                   <img src="../../../tablet_final.jpg" alt="final about us page tablet version" className='w-full'/>
                   <h3 className='font-piersansmedium text-white'>Tablet</h3>
-                  <ul>
+                  <ul className='py-8'>
                     <li className="text-white font-body text-sm pt-4">Two-column grids for products to balance content density and readability.</li>
                   </ul>
                 </div>
                 <div>
                   <img src="../../../desktop_final.jpg" alt="final about us page desktop version" className='w-full'/>
                   <h3 className='font-piersansmedium text-white'>Desktop</h3>
-                  <ul>
+                  <ul className='py-8'>
                     <li className="text-white font-body text-sm pt-4">Effective use of layout</li>
                   </ul>
                 </div>
