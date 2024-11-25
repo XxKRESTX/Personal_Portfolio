@@ -27,13 +27,13 @@ export default function App() {
       className="custom-navbar bg-transparent" 
     >
 
-      <NavbarContent className="md:hidden pr-3" justify="center">
+      <NavbarContent className="md:hidden pr-3 text-white" justify="center">
             <NavbarBrand>
             <Logo />
             </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="md:hidden" justify="end">
+      <NavbarContent className="md:hidden text-white" justify="end">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
 
@@ -43,22 +43,22 @@ export default function App() {
           <Logo />
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link className="text-white" href="#">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" aria-current="page">
+          <Link className="text-white" aria-current="page">
             Works
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className="text-white" href="#">
             About Me
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className="text-white" href="#">
             Resume
           </Link>
         </NavbarItem>

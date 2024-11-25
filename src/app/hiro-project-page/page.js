@@ -18,13 +18,13 @@ export default function Hiro() {
   return (
     <>
       <div className="flex bg-black h-full relative p-6 scroll-smooth justify-center">
-      <div className='max-w-3xl'>
+      <div className='max-w-[64rem]'>
         
         <section className="flex flex-col gap-10 relative mb-20">   
           <NavBar />
           <div className="flex flex-col justify-center gap-4">
             <h1 className="text-white font-display text-3xl">Hiro</h1>
-            <p className='text-whtie font-satoshilight text-sm sm:text-base'>The Hiro Bikes website offers a user-friendly platform for cycling enthusiasts & newcomers.</p>
+            <p className='text-white font-satoshilight text-sm sm:text-base'>The Hiro Bikes website offers a user-friendly platform for cycling enthusiasts & newcomers.</p>
             <ComputerMockup />
           </div>
           <img src='../../Finished_mockup.jpg' alt='a screenshot of the hiro website'></img>
@@ -102,27 +102,35 @@ export default function Hiro() {
               </div>
               <div className="pt-8">
                 <h2 className='font-piersansmedium text-white text-xl pt-8'>Development</h2>
-                <div>
-                  <img src="../../../mobile_final.jpg" alt="final about us page mobile version" className='w-full'/>
-                  <h3 className='font-piersansmedium text-white'>Mobile</h3>
-                  <ul className='py-8'>
-                    <li className="text-white font-body text-sm pt-4">Single-column layout for categories</li>
-                    <li className="text-white font-body text-sm pt-4">Consistent readable fonts and clear color contrast</li>
-                  </ul>
+                <div className='flex flex-row py-8'>
+                  <img src="../../../mobile_final.jpg" alt="final about us page mobile version" className='w-1/2 h-auto'/>
+                  <div>
+                    <h3 className='font-piersansmedium text-white'>Mobile</h3>
+                    <ul className='py-8'>
+                      <li className="text-white font-body text-sm pt-4">Single-column layout for categories</li>
+                      <li className="text-white font-body text-sm pt-4">Consistent readable fonts and clear color contrast</li>
+                    </ul>
+                  </div>
+
                 </div>
-                <div>
-                  <img src="../../../tablet_final.jpg" alt="final about us page tablet version" className='w-full'/>
-                  <h3 className='font-piersansmedium text-white'>Tablet</h3>
-                  <ul className='py-8'>
-                    <li className="text-white font-body text-sm pt-4">Two-column grids for products to balance content density and readability.</li>
-                  </ul>
+                <div className='flex flex-row py-8'>
+                  <img src="../../../tablet_final.jpg" alt="final about us page tablet version" className='w-1/2 h-auto'/>
+                  <div>
+                    <h3 className='font-piersansmedium text-white'>Tablet</h3>
+                    <ul className='py-8'>
+                      <li className="text-white font-body text-sm pt-4">Two-column grids for products to balance content density and readability.</li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <img src="../../../desktop_final.jpg" alt="final about us page desktop version" className='w-full'/>
-                  <h3 className='font-piersansmedium text-white'>Desktop</h3>
-                  <ul className='py-8'>
-                    <li className="text-white font-body text-sm pt-4">Effective use of layout</li>
-                  </ul>
+                <div className='flex flex-row py-8'>
+                  <img src="../../../desktop_final.jpg" alt="final about us page desktop version" className='w-1/2 h-auto'/>
+                  <div>
+                    <h3 className='font-piersansmedium text-white'>Desktop</h3>
+                    <ul className='py-8'>
+                      <li className="text-white font-body text-sm pt-4">Effective use of layout</li>
+                    </ul>
+                  </div>
+
                 </div>
               </div>
               <div className='flex flex-col gap-4 pt-8'>
@@ -145,9 +153,9 @@ export default function Hiro() {
                 <div>
                   <h3 className='font-piersansmedium text-white'>Accessibility Check</h3>
                   <p className="text-white font-body text-sm pt-4 sm:text-base">Used Google Lighthouse to assess accessibility and ensure the design adhered to best practices for inclusivity.</p>
-                  <div className='flex flex-col gap-4 max-w-fit pt-4'>                  
-                    <img src='../../../accesbility_check1.jpg' alt='' className=' h-auto'></img>
-                    <img src='../../../best_practices1.jpg' alt='' className='h-auto'></img>
+                  <div className='flex flex-row gap-2 w-fit pt-4'>                  
+                    <img src='../../../accesbility_check1.jpg' alt='accessibility score of 95' className='w-1/4 h-auto'></img>
+                    <img src='../../../best_practices1.jpg' alt='best practices score of 96' className='w-1/4 h-auto'></img>
                   </div>
                   <p className="text-white font-body text-sm pt-4 sm:text-base">The final website design prioritized responsive layouts. I ensured high-quality visuals tailored to various screen sizes, and reinforced brand identity with consistent aesthetics and concise content presentation. Accessibility was further enhanced using Google Lighthouse to optimize for inclusivity.</p>
                 </div>
@@ -185,8 +193,8 @@ export default function Hiro() {
         </div> 
       </div>
       
-      <div className='flex justify-center bg-white'>
-      <footer className="max-w-3xl w-full h-auto bg-white py-6">
+      <div className='flex justify-center bg-white px-4 lg:px-0'>
+      <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
           <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by!</h1>

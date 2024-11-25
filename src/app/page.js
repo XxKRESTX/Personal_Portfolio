@@ -6,21 +6,27 @@ import Button from './components/Button';
 import NavBar from './components/NavBar';
 import TopArrows from './components/TopArrows';
 import BottomArrows from './components/BottomArrows';
+import Spline from '@splinetool/react-spline/next';
 
 export default function App() {
   return (
     <>
       <div className="flex justify-center bg-black h-full relative p-6 scroll-smooth">
-        <div className='max-w-3xl'>
+        <div className='max-w-[64rem] w-full'>
         <section className="flex flex-col gap-10 relative mb-20">   
           <NavBar></NavBar>
           <div className="flex flex-col justify-center gap-4">
-            <div>
-              <h1 className="text-white font-display text-2xl">Nathan Wong</h1>
-              <p className="text-white font-body text-[.75rem] max-w-[11.625rem] sm:text-base whitespace-normal">
-                Through design and development, I craft engaging digital experiences that inspire and connect with users.
-              </p>
+            <div className='flex flex-row'>
+              <div>
+                <h1 className="text-white font-display text-2xl">Nathan Wong</h1>
+                <p className="text-white font-body text-[.75rem] max-w-[11.625rem] sm:max-w-[25rem] sm:text-base whitespace-normal">
+                  Through design and development, I craft engaging digital experiences that inspire and connect with users.
+                </p>
+               
+              </div>
+ 
             </div>
+            
             <a href="#works" className="max-w-fit">
               <img src="../../../arrow_down.svg" alt="arrow down" className="w-8 max-w-fit" />
             </a>
@@ -35,7 +41,7 @@ export default function App() {
               <div className="flex flex-col p-4 pb-0 gap-4 ">
                 <div>
                   <h2 className="text-white font-display text-xl">Hiro</h2>
-                  <p className="text-white font-body text-base">
+                  <p className="text-white font-body text-sm sm:text-base">
                     The Hiro Bikes e-commerce website offers a user-friendly platform for cycling enthusiasts.
                   </p>
                 </div>
@@ -47,8 +53,8 @@ export default function App() {
         </section>
         </div>
       </div>
-      <div className='flex justify-center bg-white'>
-      <footer className="max-w-2xl w-full h-auto bg-white py-6">
+      <div className='flex justify-center bg-white px-4 lg:px-0'>
+      <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
           <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by!</h1>
@@ -57,7 +63,7 @@ export default function App() {
               <h2 className="text-black font-subheader text-sm">Pages</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><a href="">Home</a></li>
-                <li className="font-body"><a href="">Works</a></li>
+                <li className="font-body"><a href="#works">Works</a></li>
                 <li className="font-body"><a href="">About Me</a></li>
                 <li className="font-body"><a href="">Resume</a></li>
               </ul>
