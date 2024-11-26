@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import TopArrows from './components/TopArrows';
 import BottomArrows from './components/BottomArrows';
 import Spline from '@splinetool/react-spline/next';
+import Link from 'next/link';
 
 export default function App() {
   return (
@@ -64,7 +65,7 @@ export default function App() {
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm">Pages</h2>
               <ul className="list-none text-black">
-                <li className="font-body"><a href="/">Home</a></li>
+                <li className="font-body"><Link href='/'>Home</Link></li>
                 <li className="font-body"><a href="#works">Works</a></li>
                 <li className="font-body"><a href="/about-me">About Me</a></li>
                 <li className="font-body"><a href="https://www.google.com/">Resume</a></li>

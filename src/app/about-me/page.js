@@ -5,6 +5,8 @@ import BottomArrows from '../components/BottomArrows';
 import TopCornerBlack from '../components/TopCardArrowBlack';
 import BottomCornerBlack from '../components/BottomCardArrowBlack';
 import Spline from '@splinetool/react-spline/next';
+import Link from 'next/link';
+
 
 
 export default function Hiro() {
@@ -29,14 +31,10 @@ export default function Hiro() {
           </div>
           <Spline
         scene="https://prod.spline.design/5TdnM2U58Pb-43Mf/scene.splinecode" 
-      />
-      <BottomArrows></BottomArrows>
+            />
+            <BottomArrows></BottomArrows>
         </section>
 
-
-
-       
-       
         </div> 
       </div>
       
@@ -49,7 +47,7 @@ export default function Hiro() {
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm">Pages</h2>
               <ul className="list-none text-black">
-                <li className="font-body"><a href="/">Home</a></li>
+              <li className="font-body"><Link href='/'>Home</Link></li>
                 <li className="font-body"><a href="">Works</a></li>
                 <li className="font-body"><a href="">About Me</a></li>
                 <li className="font-body"><a href="">Resume</a></li>

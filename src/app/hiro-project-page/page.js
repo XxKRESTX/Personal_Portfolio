@@ -6,6 +6,7 @@ import TopArrows from '../components/TopArrows';
 import BottomArrows from '../components/BottomArrows';
 import TopCornerBlack from '../components/TopCardArrowBlack';
 import BottomCornerBlack from '../components/BottomCardArrowBlack';
+import Link from 'next/link';
 
 export default function Hiro() {
   const infoItems = [
@@ -202,7 +203,7 @@ export default function Hiro() {
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm">Pages</h2>
               <ul className="list-none text-black">
-                <li className="font-body"><a href="/">Home</a></li>
+                <li className="font-body"><Link href='/'>Home</Link></li>
                 <li className="font-body"><a href="">Works</a></li>
                 <li className="font-body"><a href="">About Me</a></li>
                 <li className="font-body"><a href="">Resume</a></li>
