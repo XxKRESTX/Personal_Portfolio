@@ -39,7 +39,7 @@ export default function App() {
           <h1 id="works" className="text-white font-display text-2xl">Works</h1>
           <div className="relative h-fit py-4 my-4">
             <TopArrows />
-            <div className="lg:flex lg:items-center py-4">
+            <div className="lg:flex lg:items-center p-4">
               <ComputerMockup />
               <div className="flex flex-col p-4 pb-0 gap-4 ">
                 <div>
