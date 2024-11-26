@@ -6,7 +6,7 @@ const Button = ({ href, children }) => {
   return (
     <Link
       href={href}
-      className="border border-orange font-body text-white py-1 px-6 text-center hover:bg-orange transition-colors duration-200"
+      className="border border-orange font-body text-white py-2 px-6 text-center hover:bg-orange transition-colors duration-200 lg:max-w-64"
     >
       {children}
     </Link>

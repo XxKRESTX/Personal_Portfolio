@@ -202,7 +202,7 @@ export default function Hiro() {
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm">Pages</h2>
               <ul className="list-none text-black">
-                <li className="font-body"><a href="">Home</a></li>
+                <li className="font-body"><a href="/">Home</a></li>
                 <li className="font-body"><a href="">Works</a></li>
                 <li className="font-body"><a href="">About Me</a></li>
                 <li className="font-body"><a href="">Resume</a></li>

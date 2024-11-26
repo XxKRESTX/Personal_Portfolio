@@ -9,13 +9,12 @@ import Logo from './Logo';
 export default function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "",
-    "Home",
-    "Works",
-    "About Me",
-    "Resume",
-  ];
+    const menuItems = [
+      { label: "Home", href: "/" },
+      { label: "Hiro Project Page", href: "/hiro-project-page" },
+      { label: "About", href: "/about-me" },
+      { label: "Resume", href: "https://www.google.com/" },
+    ];
 
   return (
     <Navbar
@@ -43,22 +42,22 @@ export default function App() {
           <Logo />
         </NavbarBrand>
         <NavbarItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white focus:outline focus:orange" href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" aria-current="page">
+          <Link className="text-white" aria-current="page" href="#works">
             Works
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="/about-me">
             About Me
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="https://www.google.com/">
             Resume
           </Link>
         </NavbarItem>
@@ -70,10 +69,10 @@ export default function App() {
           <NavbarMenuItem key={`${item}-${index}`} className="pt-4">
             <Link
               className="w-full text-white"
-              href="#"
+              href={item.href}
               size="lg"
             >
-              {item}
+              {item.label}
             </Link>
           </NavbarMenuItem>
         ))}
