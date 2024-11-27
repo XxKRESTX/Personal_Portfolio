@@ -18,7 +18,7 @@ export default function App() {
           <NavBar></NavBar>
           <div className="flex justify-center gap-4 h-screen">
             <div className='flex flex-col justify-center items-center h-screen md:flex-row'>
-              <div>
+              <div className='absolute top-[10rem] right-1/2 z-10'>
                 <h1 className="text-white font-display text-2xl">Nathan Wong</h1>
                 <p className="text-white pb-8 font-body text-[.75rem] max-w-[11.625rem] sm:max-w-[25rem] sm:text-base whitespace-normal">
                   Through design and development, I craft engaging digital experiences that inspire and connect with users.
@@ -27,12 +27,12 @@ export default function App() {
                   <img src="../../../arrow_down.svg" alt="arrow down" className="w-8 max-w-fit" />
                 </a>
               </div>
-              <Spline
+   
+            </div>
+
+            <Spline
         scene="https://prod.spline.design/S7YIZABSQPlTFah9/scene.splinecode" 
       />
-            
-            </div>
-      
           </div>
         </section>
         <section>

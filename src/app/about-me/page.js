@@ -31,7 +31,7 @@ export default function Hiro() {
           </div>
           <Spline
         scene="https://prod.spline.design/5TdnM2U58Pb-43Mf/scene.splinecode" 
-            />
+      />
             <BottomArrows></BottomArrows>
         </section>
 
