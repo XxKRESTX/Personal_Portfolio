@@ -9,9 +9,6 @@ import BottomCornerBlack from '../components/BottomCardArrowBlack';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
-
-
 export default function Hiro() {
   const infoItems = [
     { label: 'Tools', value: 'Figma, HTML, CSS and JavaScript' },

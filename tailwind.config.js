@@ -103,7 +103,19 @@ module.exports = {
       },
       scrollBehavior: {
         smooth: 'smooth',
-      }
+      },
+      outline: {
+        custom: ['2px solid #ff6347', '2px'], // Outline color and offset
+      },
+      colors: {
+        customFocus: '#ff6347', // Add a reusable color for focus
+      },
+      transitionProperty: {
+        'focus-color': 'color, outline-color, outline-offset',
+      },
+      transitionDuration: {
+        focus: '300ms', // Smooth transitions for focus
+      },
     },}, // light theme layout tokens
         colors: {      
           'black': '#1E1E1E',

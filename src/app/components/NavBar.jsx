@@ -12,6 +12,7 @@ import {
   Link,
 } from "@nextui-org/react";
 import Logo from "./Logo";
+import { MyLink } from "./LinkDesign";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,11 +62,8 @@ export default function App() {
         </NavbarBrand>
         {menuItems.map((item) => (
           <NavbarItem key={item.label}>
-            <Link className="text-white focus:outline-orange relative no-underline cursor-pointer transition-colors duration-300 ease-linear 
-                 after:content-[''] after:absolute after:h-[3px] after:left-0 after:bottom-0 
-                 after:w-0 after:bg-[#ff6347] after:transition-[width] after:duration-500 hover:after:w-full " href={item.href}>
-              {item.label}
-            </Link>
+            <MyLink href={item.href}>{item.label}</MyLink>
+
           </NavbarItem>
         ))}
       </NavbarContent>

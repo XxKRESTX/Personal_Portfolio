@@ -30,7 +30,7 @@ export default function App() {
                     alt="arrow down"
                     width={35}
                     height={35}
-                    className="">
+                    >
                   </Image>
                 </a>
               </div>
