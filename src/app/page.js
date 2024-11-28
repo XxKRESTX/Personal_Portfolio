@@ -18,9 +18,9 @@ export default function App() {
           <NavBar></NavBar>
           <div className="flex justify-center gap-4 h-screen">
             <div className='flex flex-col justify-center items-center h-screen md:flex-row'>
-              <div className='absolute top-[10rem] right-1/2 z-10'>
-                <h1 className="text-white font-display text-2xl">Nathan Wong</h1>
-                <p className="text-white pb-8 font-body text-[.75rem] max-w-[11.625rem] sm:max-w-[25rem] sm:text-base whitespace-normal">
+              <div className='absolute top-[10rem] right-0 z-10 w-full'>
+                <h1 className="text-white font-display text-xl md:text-2xl">Nathan Wong</h1>
+                <p className="text-white pb-8 font-body text-[.75rem] w-full sm:max-w-[25rem] sm:text-base whitespace-normal">
                   Through design and development, I craft engaging digital experiences that inspire and connect with users.
                 </p>
                 <a href="#works" className="max-w-fit pt-4">
@@ -55,11 +55,11 @@ export default function App() {
         </section>
         </div>
       </div>
-      <div className='flex justify-center bg-white px-4 lg:px-0'>
+      <div className='flex justify-center bg-white px-4 lg:px-8'>
       <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
-          <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by!</h1>
+          <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by!<span className='text-orange'>✌</span></h1>
           <div className="flex flex-row justify-evenly">
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm">Pages</h2>
@@ -67,7 +67,7 @@ export default function App() {
                 <li className="font-body"><Link href='/'>Home</Link></li>
                 <li className="font-body"><a href="#works">Works</a></li>
                 <li className="font-body"><a href="/about-me">About Me</a></li>
-                <li className="font-body"><a href="https://www.google.com/">Resume</a></li>
+                <li className="font-body"><a href="/resume.pdf">Resume</a></li>
               </ul>
             </div>
             <div className="flex flex-col gap-4">

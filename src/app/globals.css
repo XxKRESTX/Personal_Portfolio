@@ -35,17 +35,45 @@ background-color: transparent;
 
 }
 
-
-
-
 a:focus {
-outline: 2px solid #ff6347; /* Add a focus outline for accessibility */
+outline: 2px solid #ff6347; 
 outline-offset: 2px;
 }
 
 a:hover {
 opacity: 80%;
 }
+
+li > a:focus{
+  outline: 2px solid #ff6347; 
+  outline-offset: 2px;
+}
+
+/* Referenced from https://codepen.io/gbopola/pen/GRBONQr*/
+
+footer li > a {
+  color: #1e1e1e; /* Initial color */
+  text-decoration: none; /* Optional: Removes underline */
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+footer li > a::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: #ff6347;
+  transition: width .5s;
+}
+
+footer li > a:hover::after {
+  width: 100%;
+}
+
 
 @font-face {
   font-family: 'Satoshi-Light';

@@ -1,20 +1,31 @@
-//imported from NextUI https://nextui.org/docs/components/navbar#controlled-menu
 "use client";
-import React from "react";
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
-import Logo from './Logo';
 
-
+import React, { useState } from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+  Link,
+} from "@nextui-org/react";
+import Logo from "./Logo";
 
 export default function App() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const menuItems = [
-      { label: "Home", href: "/" },
-      { label: "Hiro Project Page", href: "/hiro-project-page" },
-      { label: "About", href: "/about-me" },
-      { label: "Resume", href: "https://www.google.com/" },
-    ];
+  const menuItems = [
+    { label: "Home", href: "/" },
+    { label: "Works", href: "/#works" },
+    { label: "About", href: "/about-me" },
+    { label: "Resume", href: "/resume.pdf" },
+  ];
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false); 
+  };
 
   return (
     <Navbar
@@ -23,60 +34,61 @@ export default function App() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBlurred={false}
-      className="custom-navbar bg-transparent" 
+      className="custom-navbar bg-transparent"
     >
-
+      {/* Mobile Navbar */}
       <NavbarContent className="md:hidden pr-3 text-white" justify="center">
-            <NavbarBrand>
-            <Logo />
-            </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent className="md:hidden text-white" justify="end">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
-      </NavbarContent>
-
-
-      <NavbarContent className="hidden md:flex gap-4 font-piersansmedium " justify="end">
         <NavbarBrand>
           <Logo />
         </NavbarBrand>
-        <NavbarItem>
-          <Link className="text-white focus:outline focus:orange" href="/">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-white" aria-current="page" href="#works">
-            Works
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-white" href="/about-me">
-            About Me
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-white" href="https://www.google.com/">
-            Resume
-          </Link>
-        </NavbarItem>
       </NavbarContent>
 
+      <NavbarContent className="md:hidden text-white" justify="end">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen} // Accessibility for screen readers
+          aria-controls="navbar-menu"
+        />
+      </NavbarContent>
 
-      <NavbarMenu className="bg-black">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`} className="pt-4">
-            <Link
-              className="w-full text-white"
-              href={item.href}
-              size="lg"
-            >
+      {/* Desktop Navbar */}
+      <NavbarContent
+        className="hidden md:flex gap-4 font-piersansmedium"
+        justify="end"
+      >
+        <NavbarBrand>
+          <Logo />
+        </NavbarBrand>
+        {menuItems.map((item) => (
+          <NavbarItem key={item.label}>
+            <Link className="text-white focus:outline-orange" href={item.href}>
               {item.label}
             </Link>
-          </NavbarMenuItem>
+          </NavbarItem>
         ))}
-      </NavbarMenu>
+      </NavbarContent>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <NavbarMenu
+          className="bg-black pt-8"
+          id="navbar-menu"
+          aria-hidden={!isMenuOpen} // Accessibility for screen readers
+        >
+          {menuItems.map((item) => (
+            <NavbarMenuItem key={item.label} className="pt-4">
+              <Link
+                className="w-full text-white focus:outline focus:outline-orange"
+                href={item.href}
+                size="lg"
+                onClick={handleMenuItemClick} // Close the menu when clicked
+              >
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+        </NavbarMenu>
+      )}
     </Navbar>
   );
 }
