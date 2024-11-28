@@ -30,22 +30,25 @@ export default function App() {
 
   return (
     <Navbar
-      isBordered
-      position="static"
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      isBlurred={false}
-      className="custom-navbar bg-transparent"
-    >
+    isBordered
+    position="static"
+    isMenuOpen={isMenuOpen}
+    onMenuOpenChange={setIsMenuOpen}
+    isBlurred={false}
+    className="custom-navbar bg-transparent"
+    role="navigation"
+    aria-label="Main navigation"
+  >
       {/* Mobile Navbar */}
       <NavbarContent className="md:hidden pr-3 text-white" justify="center">
         <NavbarBrand>
-          <Logo />
+          <Logo aria-label="Go to homepage" />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="md:hidden text-white" justify="end">
         <NavbarMenuToggle
+          className="focus:outline-orange"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen} // Accessibility for screen readers
           aria-controls="navbar-menu"
@@ -58,12 +61,13 @@ export default function App() {
         justify="end"
       >
         <NavbarBrand>
-          <Logo />
+          <Logo aria-label="Go to homepage"/>
         </NavbarBrand>
         {menuItems.map((item) => (
           <NavbarItem key={item.label}>
-            <MyLink href={item.href}>{item.label}</MyLink>
-
+            <MyLink href={item.href} aria-label={item.label === "Resume" ? "Open Resume" : `Go to ${item.label}`}
+            >{item.label}</MyLink>
+            
           </NavbarItem>
         ))}
       </NavbarContent>
@@ -77,14 +81,15 @@ export default function App() {
         >
           {menuItems.map((item) => (
             <NavbarMenuItem key={item.label} className="pt-4">
-              <Link
+              <MyLink
                 className="w-full text-white focus:outline focus:outline-orange"
                 href={item.href}
                 size="lg"
                 onClick={handleMenuItemClick} // Close the menu when clicked
+                aria-label={item.label === "Resume" ? "Open Resume" : `Go to ${item.label}`}
               >
                 {item.label}
-              </Link>
+              </MyLink>
             </NavbarMenuItem>
           ))}
         </NavbarMenu>
