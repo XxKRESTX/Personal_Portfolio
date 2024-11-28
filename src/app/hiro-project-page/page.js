@@ -172,8 +172,8 @@ export default function Hiro() {
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm md:text-base">Let&#39;s Connect</h2>
               <ul className="list-none text-black">
-                <li className="font-body"><a href="">Email</a></li>
-                <li className="font-body"><a href="">LinkedIn</a></li>
+                <li className="font-body"><a href="https://www.google.com/">Email</a></li>
+                <li className="font-body"><a href="https://www.google.com/">LinkedIn</a></li>
               </ul>
             </div>
           </nav>
