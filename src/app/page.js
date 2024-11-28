@@ -8,6 +8,7 @@ import TopArrows from './components/TopArrows';
 import BottomArrows from './components/BottomArrows';
 import Spline from '@splinetool/react-spline/next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function App() {
   return (
@@ -23,8 +24,14 @@ export default function App() {
                 <p className="text-white pb-8 font-body text-[.75rem] w-full sm:max-w-[25rem] sm:text-base whitespace-normal">
                   Through design and development, I craft engaging digital experiences that inspire and connect with users.
                 </p>
-                <a href="#works" className="max-w-fit pt-4">
-                  <img src="../../../arrow_down.svg" alt="arrow down" className="w-8 max-w-fit" />
+                <a href="#works" className="w-fit pt-4">
+                  <Image
+                    src='/arrow_down.svg'
+                    alt="arrow down"
+                    width={35}
+                    height={35}
+                    className="">
+                  </Image>
                 </a>
               </div>
    
@@ -59,7 +66,7 @@ export default function App() {
       <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
-          <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by!<span className='text-orange'>✌</span></h1>
+          <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by! <span className='text-orange'>✌</span></h1>
           <div className="flex flex-row justify-evenly">
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm">Pages</h2>
