@@ -29,7 +29,6 @@ export default function App() {
               </div>
    
             </div>
-
             <Spline
         scene="https://prod.spline.design/S7YIZABSQPlTFah9/scene.splinecode" 
       />
