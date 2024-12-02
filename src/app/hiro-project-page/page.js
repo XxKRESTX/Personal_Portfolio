@@ -45,13 +45,11 @@ export default function Hiro() {
         </section>
         <section id="overview">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm sm:text-base">01</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Overview</h1>
               <p className="text-white font-body text-sm sm:text-base">
-              The Hiro Bikes website was developed as the second major project for IAT 339: Web Development, focusing on creating a seamless and user-friendly e-commerce platform  for cycling enthusiasts. The project emphasizes responsive design, ensuring the site adapts beautifully and functions optimally across  desktops, tablets, and smartphones. As I as the main developer and designer, I showcased a curated selection of bike models, including road, mountain, sport, and casual bikes, using  high-quality images and concise descriptions across various screen sizes. 
-              </p>
+              The <span className='text-orange'>Hiro Bikes website</span> was developed as the second major project for IAT 339: Web Development, focusing on creating a seamless and user-friendly e-commerce platform for cycling enthusiasts. The project emphasizes responsive design, ensuring the site adapts beautifully and functions optimally across desktops, tablets, and smartphones. As I as the main  developer and designer, I showcased a curated selection of bike models, including road, mountain, sport, and casual bikes, using high-quality images and concise descriptions across various screen sizes.              </p>
             </div>
             <div className="p-4 my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Goal</h2>
@@ -63,28 +61,20 @@ export default function Hiro() {
         </section>
         <section id="process">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm sm:text-base">02</p>
             <TopArrows />
             <div className="p-4">
               <div className='flex flex-row gap-2'>
-              <Image
-                src="/design_logo.svg" 
-                alt="block logo"
-                width={30} 
-                height={30} 
-                className='h-auto'
-              />
                 <h1 className="text-white font-display text-2xl">Process</h1>
               </div>
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Design Objectives</h2>
                 <p className="font-body text-white text-sm sm:text-base">
-                My role involved ensuring the site provided a seamless and engaging shopping experience across all devices, with a focus on showcasing products effectively while promoting Hiro’s brand values. By designing and coding the homepage, I emphasized creating a visually appealing and intuitive interface that adapts to various screen sizes, enabling users to explore and interact with Hiro’s range of bicycles effortlessly.                </p>
+                My role ensured a seamless and engaging shopping experience across devices, showcasing products effectively while promoting Hiro’s brand values. By designing and coding the homepage, I created a visually appealing and intuitive interface that adapts to various screen sizes, allowing users to explore Hiro’s bicycles effortlessly.</p>
               </div>
               <div className='my-4'>
                 <h2 className="font-piersansmedium text-white text-xl">Design</h2>
                 <p className="text-white font-body text-sm sm:text-base">
-                There were a few things first that I needed to design before coding. For example, designing pages that fit seamlessly within mobile to desktop resolutions. To begin, I used tools like Figma to create low-fidelity mockups, which illustrate my initial thinking and help ensure a smooth transition to development.</p>
+                Before coding, I first designed pages to fit seamlessly across mobile to desktop resolutions. Using tools like Figma, I created low-fidelity mockups to illustrate my initial ideas and ensure a smooth transition to development.</p>
               </div>
               
               <div className="flex flex-col my-4 gap-4">
@@ -105,11 +95,10 @@ export default function Hiro() {
               <div className="flex flex-col gap-2 pt-8">
                 <h2 className='font-piersansmedium text-white text-xl'>Style Guide</h2>
                 <p className="text-white font-body text-sm sm:text-base">
-                Creating a style guide allows me to ensure consistency across all design elements, strengthening the brand identity while streamlining both the design and development processes. It helps me collaborate effectively with others by providing a clear reference point, ensuring that new features align with the existing design. By promoting cohesive visuals, enhancing the user experience, and improving accessibility, my style guide simplifies scaling and supports future updates, making it an essential tool for maintaining professionalism and efficiency in my projects.</p>
+                A style guide ensures consistency across design elements, strengthens brand identity, and streamlines the design and development processes. It supports effective collaboration by providing a clear reference, ensuring new features align with the existing design. By promoting cohesive visuals, enhancing the user experience, and improving accessibility, the style guide simplifies scaling and supports future updates, maintaining professionalism and efficiency in my projects.</p>
                 <Image
                   src="/style_guide.jpg" 
                   alt="Hiro style guide"
-                  layout="responsive" 
                   width={1920} 
                   height={1080} 
               />              
@@ -122,12 +111,12 @@ export default function Hiro() {
         </section>
         <section id="Challenges">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm sm:text-base">03</p>
+            
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Challenges</h1>
               <p className="text-white font-body text-sm sm:text-base">
-              Given that I had only one month to design and code Hiro Bikes,there were a few limitations I encountered. When designing a responsive website, I faced challenges with high-resolution SVGs. While they are ideal for scalability, ensuring they didn’t lose sharpness on smaller screens or appear too large required careful resizing and testing. Creating a hamburger menu was another difficulty—I struggled with implementing an intuitive design that worked well across devices, as I was unsure how to balance aesthetics with functionality for mobile users and also implementation during development. Finally, maintaining a cohesive and consistent look was challenging as I worked to align fonts, buttons, and colors across all layouts. Ensuring elements matched the style guide and remained visually balanced on different screen sizes required extra attention to detail and iteration. These challenges highlighted areas for growth in both design precision and problem-solving.</p>
+              With just one month to design and code Hiro Bikes, I faced several challenges. Managing high-resolution SVGs was tricky as they needed resizing and testing to stay sharp on small screens without appearing oversized. Creating an intuitive hamburger menu that balanced aesthetics and functionality across devices was also difficult. Additionally, maintaining consistency in fonts, buttons, and colors across layouts required careful attention to align with the style guide and ensure visual balance. These experiences underscored the need for growth in design and problem-solving.</p>
             </div>
  
             <BottomArrows />
@@ -135,12 +124,11 @@ export default function Hiro() {
         </section>
         <section id="reflection">
           <div className="relative h-fit py-4 my-4">
-            <p className="text-orange font-body text-sm sm:text-base">04</p>
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Reflection</h1>
               <p className="text-white font-body text-sm sm:text-base">
-              This project strengthened my skills in designing for responsive layouts, maintaining visual consistency, and aligning design elements with brand values, while shaping my UX mindset to prioritize user needs. Challenges like managing high-resolution SVGs, creating an intuitive hamburger menu, and ensuring cohesive elements across different screen sizes highlighted areas for growth. These experiences motivated me to refine my design precision and learn more about scalable and accessible design techniques. Looking ahead, I aim to improve accessibility, create visually balanced designs for all devices, and explore advanced tools for maintaining consistency across components. Building on these lessons, I’m excited to tackle new challenges and deliver impactful, user-centered designs in future projects.</p>
+              This project enhanced my skills in responsive design, visual consistency, and aligning elements with brand values, while creating a user-focused mindset. Challenges with high-resolution SVGs, intuitive menu design, and maintaining cohesive layouts revealed areas for growth, motivating me to refine my precision and explore scalable, accessible techniques. Moving forward, I aim to improve accessibility, ensure balanced designs across devices, and leverage advanced tools for consistency, ready to tackle new challenges and create impactful user-centered designs.</p>
             </div>
             <BottomArrows />
           </div>
