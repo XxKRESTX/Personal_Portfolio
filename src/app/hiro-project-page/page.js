@@ -49,12 +49,12 @@ export default function Hiro() {
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Overview</h1>
               <p className="text-white font-body text-sm sm:text-base">
-              The <span className='text-orange'>Hiro Bikes website</span> was developed as the second major project for IAT 339: Web Development, focusing on creating a seamless and user-friendly e-commerce platform for cycling enthusiasts. The project emphasizes responsive design, ensuring the site adapts beautifully and functions optimally across desktops, tablets, and smartphones. As I as the main  developer and designer, I showcased a curated selection of bike models, including road, mountain, sport, and casual bikes, using high-quality images and concise descriptions across various screen sizes.              </p>
+              The <span className='text-orange'>Hiro Bikes website</span> was developed as the second major project for <span className='text-orange'>IAT 339: Web Development</span>, focusing on creating a <span className='text-orange'>seamless</span> and <span className='text-orange'>user-friendly e-commerce platform</span> for <span className='text-orange'>cycling enthusiasts</span>. The project emphasizes <span className='text-orange'>responsive design</span>, ensuring the site <span className='text-orange'>adapts beautifully</span> and <span className='text-orange'>functions optimally</span> across <span className='text-orange'>desktops, tablets, and smartphones</span>. As I was the <span className='text-orange'>main developer</span> and <span className='text-orange'>designer</span>, I showcased a curated selection of bike models, including road, mountain, sport, and casual bikes, using <span className='text-orange'>high-quality images</span> and <span className='text-orange'>concise descriptions</span> across various screen sizes.</p>
             </div>
             <div className="p-4 my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Goal</h2>
                 <p className="font-body text-white text-sm sm:text-base">
-                I needed to design a website to adapt to various screen sizes without compromising usability or design.</p>
+                I needed to <span className='text-orange'>design a website</span> to adapt to <span className='text-orange'>various screen sizes</span> without compromising <span className='text-orange'>usability</span> or <span className='text-orange'>design</span>.</p>
               </div>
             <BottomArrows />
           </div>
@@ -69,7 +69,7 @@ export default function Hiro() {
               <div className="my-4">
                 <h2 className="font-piersansmedium text-white text-xl">Design Objectives</h2>
                 <p className="font-body text-white text-sm sm:text-base">
-                My role ensured a seamless and engaging shopping experience across devices, showcasing products effectively while promoting Hiro’s brand values. By designing and coding the homepage, I created a visually appealing and intuitive interface that adapts to various screen sizes, allowing users to explore Hiro’s bicycles effortlessly.</p>
+                My role ensured a <span className='text-orange'>seamless</span> and <span className='text-orange'>engaging shopping experience</span> across devices, showcasing <span className='text-orange'>products effectively</span> while promoting Hiro’s brand values. By designing and coding the homepage, I created a visually appealing and intuitive interface that adapts to various screen sizes, allowing users to explore Hiro’s bicycles effortlessly.</p>
               </div>
               <div className='my-4'>
                 <h2 className="font-piersansmedium text-white text-xl">Design</h2>
