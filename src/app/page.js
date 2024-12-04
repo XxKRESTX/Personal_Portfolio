@@ -22,8 +22,7 @@ export default function App() {
               <div className='absolute top-[10rem] right-0 z-10 w-full'>
                 <h1 className="text-white font-display text-xl md:text-2xl">Nathan Wong</h1>
                 <p className="text-white pb-8 font-body text-[.75rem] w-full sm:max-w-[25rem] sm:text-base whitespace-normal">
-                  Through design and development, I craft engaging digital experiences that inspire and connect with users.
-                </p>
+                Frustrated with designs that confuse users? I create intuitive UX and UI experiences that captivate and connect, helping your brand grow effortlessly.</p>
                 <a href="#works" className="w-fit pt-4">
                   <Image
                     src='/arrow_down.svg'
