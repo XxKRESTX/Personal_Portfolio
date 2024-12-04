@@ -39,7 +39,7 @@ export default function App() {
     role="navigation"
     aria-label="Main navigation"
   >
-      {/* Mobile Navbar */}
+      
       <NavbarContent className="md:hidden pr-3 text-white" justify="center">
         <NavbarBrand>
           <Logo aria-label="Go to homepage" />
@@ -50,12 +50,12 @@ export default function App() {
         <NavbarMenuToggle
           className="focus:outline-orange"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isMenuOpen} // Accessibility for screen readers
+          aria-expanded={isMenuOpen} 
           aria-controls="navbar-menu"
         />
       </NavbarContent>
 
-      {/* Desktop Navbar */}
+     
       <NavbarContent
         className="hidden md:flex gap-4 font-piersansmedium"
         justify="end"
@@ -72,12 +72,12 @@ export default function App() {
         ))}
       </NavbarContent>
 
-      {/* Mobile Menu */}
+      
       {isMenuOpen && (
         <NavbarMenu
           className="bg-black pt-8"
           id="navbar-menu"
-          aria-hidden={!isMenuOpen} // Accessibility for screen readers
+          aria-hidden={!isMenuOpen} 
         >
           {menuItems.map((item) => (
             <NavbarMenuItem key={item.label} className="pt-4">
@@ -85,7 +85,7 @@ export default function App() {
                 className="w-full text-white focus:outline focus:outline-orange"
                 href={item.href}
                 size="lg"
-                onClick={handleMenuItemClick} // Close the menu when clicked
+                onClick={handleMenuItemClick} 
                 aria-label={item.label === "Resume" ? "Open Resume" : `Go to ${item.label}`}
               >
                 {item.label}

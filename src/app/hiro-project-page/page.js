@@ -16,7 +16,7 @@ export default function Hiro() {
     { label: 'Members', value: 'Nathan (Designer & Developer), Shixuan (Developer)' },
     { label: 'Responsibilities', value: 'UI/UX Design & Web Development' },
   ];
-
+  
   return (
     <>
       <div className="flex bg-black h-full relative p-6 scroll-smooth justify-center">
@@ -26,7 +26,6 @@ export default function Hiro() {
           <div className="flex flex-col justify-center gap-4">
             <h1 className="text-white font-display text-3xl">Hiro</h1>
             <p className='text-white font-satoshilight text-sm sm:text-base'>The Hiro Bikes website offers a user-friendly platform for cycling enthusiasts & newcomers.</p>
-            
             <ComputerMockup />
           </div>
           {/* The Image component already lazy loads and uses srcset automatically. Referenced from https://nextjs.org/docs/app/building-your-application/optimizing/images */}
@@ -41,7 +40,6 @@ export default function Hiro() {
           <div className="flex items-center justify-center bg-black">
             <InfoSection items={infoItems} />
           </div>
-          
         </section>
         <section id="overview">
           <div className="relative h-fit py-4 my-4">
@@ -76,7 +74,6 @@ export default function Hiro() {
                 <p className="text-white font-body text-sm sm:text-base">
                 Before coding, I first designed pages to fit seamlessly across mobile to desktop resolutions. Using tools like Figma, I created low-fidelity mockups to illustrate my initial ideas and ensure a smooth transition to development.</p>
               </div>
-              
               <div className="flex flex-col my-4 gap-4">
               <Image
                   src="/low_mockups.jpg" 
@@ -103,22 +100,18 @@ export default function Hiro() {
                   height={1080} 
               />              
               </div>
-
-             
             </div>
             <BottomArrows />
           </div>
         </section>
         <section id="Challenges">
-          <div className="relative h-fit py-4 my-4">
-            
+          <div className="relative h-fit py-4 my-4">   
             <TopArrows />
             <div className="p-4">
               <h1 className="text-white font-display text-2xl">Challenges</h1>
               <p className="text-white font-body text-sm sm:text-base">
               With just <span className='text-orange'>one month</span> to design and code Hiro Bikes, I faced <span className='text-orange'>several challenges</span>. Managing <span className='text-orange'>high-resolution SVGs</span> was <span className='text-orange'>tricky</span> as they <span className='text-orange'>needed resizing</span> and <span className='text-orange'>testing</span> to stay sharp on <span className='text-orange'>small screens</span> without appearing oversized. Creating an intuitive <span className='text-orange'>hamburger menu</span> that balanced <span className='text-orange'>aesthetics</span> and <span className='text-orange'>functionality</span> across devices was also <span className='text-orange'>difficult</span>. Additionally, <span className='text-orange'>maintaining consistency</span> in <span className='text-orange'>fonts, buttons,</span> and <span className='text-orange'>colours</span> across layouts <span className='text-orange'>required careful attention</span> to align with the style guide and <span className='text-orange'>ensure visual balance</span>. These experiences underscored the <span className='text-orange'>need for growth</span> in <span className='text-orange'>design</span> and <span className='text-orange'>problem-solving</span>.</p>
             </div>
- 
             <BottomArrows />
           </div>
         </section>
@@ -135,7 +128,6 @@ export default function Hiro() {
         </section>
         </div> 
       </div>
-      
       <div className='flex justify-center bg-white px-6 lg:px-8 '>
       <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
@@ -167,7 +159,6 @@ export default function Hiro() {
           </nav>
           <BottomCornerBlack />
         </div>
-       
       </footer>
       </div>
     </>
