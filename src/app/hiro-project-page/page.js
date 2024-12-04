@@ -140,10 +140,10 @@ export default function Hiro() {
       <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
-          <h1 className="text-black font-display text-lg md:text-2xl text-center">Thanks for stopping by! <span className='text-orange'>✌</span></h1>
+          <h1 className="text-black font-display text-[1.25rem] md:text-xl lg:text-2xl text-center">Thanks for stopping by! <span className='text-orange'>✌</span></h1>
           <nav className="flex flex-row justify-evenly">
             <div className="flex flex-col gap-4">
-              <h2 className="text-black font-subheader text-sm md:text-base">Pages</h2>
+              <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Pages</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><Link href='/'>Home</Link></li>
                 <li className="font-body">  <Link href="/#works">Works</Link></li>
@@ -152,13 +152,13 @@ export default function Hiro() {
               </ul>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-black font-subheader text-sm md:text-base">Works</h2>
+              <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Works</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><a href="/hiro-project-page">Hiro</a></li>
               </ul>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-black font-subheader text-sm md:text-base">Let&#39;s Connect</h2>
+              <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Let&#39;s Connect</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><a href="https://www.google.com/">Email</a></li>
                 <li className="font-body"><a href="https://www.google.com/">LinkedIn</a></li>

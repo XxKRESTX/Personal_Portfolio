@@ -66,10 +66,10 @@ export default function App() {
       <footer className="max-w-[64rem] w-full h-auto bg-white py-6">
         <div className="flex flex-col gap-4 relative h-full py-4">
           <TopCornerBlack />
-          <h1 className="text-black font-display text-[1.25rem] text-center">Thanks for stopping by! <span className='text-orange'>✌</span></h1>
+          <h1 className="text-black font-display text-[1.25rem] text-center md:text-xl lg:text-2xl">Thanks for stopping by! <span className='text-orange'>✌</span></h1>
           <div className="flex flex-row justify-evenly">
             <div className="flex flex-col gap-4">
-              <h2 className="text-black font-subheader text-sm">Pages</h2>
+              <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Pages</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><Link href='/'>Home</Link></li>
                 <li className="font-body"><a href="#works">Works</a></li>
@@ -78,13 +78,13 @@ export default function App() {
               </ul>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-black font-subheader text-sm">Works</h2>
+              <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Works</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><a href="/hiro-project-page">Hiro</a></li>
               </ul>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-black font-subheader text-sm">Let&#39;s Connect</h2>
+              <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Let&#39;s Connect</h2>
               <ul className="list-none text-black">
                 <li className="font-body"><a href="https://www.google.com/">Email</a></li>
                 <li className="font-body"><a href="https://www.google.com/">LinkedIn</a></li>
