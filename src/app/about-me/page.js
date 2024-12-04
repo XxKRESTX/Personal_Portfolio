@@ -51,8 +51,8 @@ export default function Hiro() {
               <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Pages</h2>
               <ul className="list-none text-black">
               <li className="font-body"><Link href='/'>Home</Link></li>
-                <li className="font-body"><a href="">Works</a></li>
-                <li className="font-body"><a href="">About Me</a></li>
+                <li className="font-body"><a href="/#works">Works</a></li>
+                <li className="font-body"><a href="/about-me">About Me</a></li>
                 <li className="font-body"><a href="/resume.pdf">Resume</a></li>
               </ul>
             </div>
