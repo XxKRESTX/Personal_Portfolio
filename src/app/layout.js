@@ -1,4 +1,5 @@
 "use client";
+//Referenced from https://github.com/darkroomengineering/lenis/blob/main/packages/react/README.md
 import { ReactLenis, useLenis } from 'lenis/react'
 
 import "./globals.css";
@@ -7,7 +8,8 @@ import "./globals.css";
 
 export default function RootLayout({ children }) {
 
-    
+  //Referenced from https://github.com/darkroomengineering/lenis/blob/main/packages/react/README.md
+
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   })

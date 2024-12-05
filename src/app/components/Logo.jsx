@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Logo() {
     return (
-        <Link href="/">
+        <Link href="/" alt='links to the home page'>
             <Image
                 src="/portfolio_logo.svg"
                 alt="logo with two arrows pointing out with NW initials"

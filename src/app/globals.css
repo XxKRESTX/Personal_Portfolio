@@ -24,10 +24,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/*Referenced from https://nextui.org/docs/components/navbar#controlled-menu*/
 .custom-navbar header {
-background-color: transparent; /* Example: Background color for the header */
-height: 80px;              /* Example: Set height */
-padding: 0;           /* Example: Adjust padding */
+background-color: transparent; 
+height: 80px;            
+padding: 0;         
 max-width: 100%;
 }
 

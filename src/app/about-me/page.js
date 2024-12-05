@@ -27,7 +27,7 @@ export default function Hiro() {
             <div className="flex flex-col justify-center gap-4">
               <h1 className="text-white font-display text-3xl">About Me</h1>
               <TopArrows></TopArrows>
-              <p className='text-white font-satoshilight p-4 text-sm sm:text-base lg:leading-loose'>Hi! I’m Nathan, a second-year design student at Simon Fraser University. With a unique blend of front-end development skills and design experience, I bring bold ideas to life in practical, impactful ways. Outside of my studies, I enjoy gaming, badminton, and exploring new mountains to hike. I plan to work in the UX Design space and am passionate about using design as a tool for social impact and am always open to collaborating who share this vision. Let’s explore opportunities to collaborate and make a difference through thoughtful, user-centered design!</p>
+              <p className='text-white font-satoshilight p-4 text-sm sm:text-base lg:leading-loose'>Hi! I&#39;m Nathan, a second-year design student at Simon Fraser University. With a unique blend of front-end development skills and design experience, I bring bold ideas to life in practical, impactful ways. Outside of my studies, I enjoy gaming, badminton, and exploring new mountains to hike. I plan to work in the UX Design space and am passionate about using design as a tool for social impact and am always open to collaborating who share this vision. Let&#39;s explore opportunities to collaborate and make a difference through thoughtful, user-centered design!</p>
                 <div className='w-full h-[550px]'>
                 <Spline
         scene="https://prod.spline.design/5TdnM2U58Pb-43Mf/scene.splinecode" 
@@ -51,15 +51,15 @@ export default function Hiro() {
               <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Pages</h2>
               <ul className="list-none text-black">
               <li className="font-body"><Link href='/'>Home</Link></li>
-                <li className="font-body"><a href="/#works">Works</a></li>
-                <li className="font-body"><a href="/about-me">About Me</a></li>
-                <li className="font-body"><a href="/resume.pdf">Resume</a></li>
+                <li className="font-body"><Link href="/#works">Works</Link></li>
+                <li className="font-body"><Link href="/about-me">About Me</Link></li>
+                <li className="font-body"><Link href="/resume.pdf">Resume</Link></li>
               </ul>
             </div>
             <div className="flex flex-col gap-4">
               <h2 className="text-black font-subheader text-sm md:text-base lg:text-xl">Works</h2>
               <ul className="list-none text-black">
-                <li className="font-body"><a href="/hiro-project-page">Hiro</a></li>
+                <li className="font-body"><Link href="/hiro-project-page">Hiro</Link></li>
               </ul>
             </div>
             <div className="flex flex-col gap-4">

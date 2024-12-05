@@ -1,3 +1,4 @@
+/* Referenced from https://codepen.io/gbopola/pen/GRBONQr*/
 import { extendVariants } from "@nextui-org/react";
 
 export const MyLink = extendVariants("a", {
