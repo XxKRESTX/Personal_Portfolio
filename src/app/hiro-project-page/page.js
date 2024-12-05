@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import NavBar from '../components/NavBar';
 import ComputerMockup from '../components/ComputerMockup';
@@ -10,6 +11,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hiro() {
+
+
+
   const infoItems = [
     { label: 'Tools', value: 'Figma, HTML, CSS and JavaScript' },
     { label: 'Timeline', value: 'Oct 2024 - Nov 2024' },
@@ -19,6 +23,7 @@ export default function Hiro() {
   
   return (
     <>
+      
       <div className="flex bg-black h-full relative p-6 scroll-smooth justify-center">
       <div className='max-w-[64rem]'>
         <section className="flex flex-col gap-10 relative mb-20">   
@@ -161,6 +166,7 @@ export default function Hiro() {
         </div>
       </footer>
       </div>
+    
     </>
   );
 }

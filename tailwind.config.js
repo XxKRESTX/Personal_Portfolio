@@ -101,9 +101,6 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      scrollBehavior: {
-        smooth: 'smooth',
-      },
       outline: {
         custom: ['2px solid #ff6347', '2px'], // Outline color and offset
       },

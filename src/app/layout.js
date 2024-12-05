@@ -1,19 +1,26 @@
+"use client";
+import { ReactLenis, useLenis } from 'lenis/react'
 
 import "./globals.css";
 
 
 
-export const metadata = {
-  title: "Nathan's Portfolio",
-};
-
 export default function RootLayout({ children }) {
+
+    
+  const lenis = useLenis(({ scroll }) => {
+    // called every scroll
+  })
+
   return (
     <html lang="en">
       <meta charSet="utf-8" />
+      <title>Nathan's Portfolio</title>
+      <ReactLenis root>
       <body>
         {children}
       </body>
+      </ReactLenis>
     </html>
   );
 }
