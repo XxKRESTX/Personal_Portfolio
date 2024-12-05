@@ -20,9 +20,6 @@ body {
   background: var(--background);
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 /*Referenced from https://nextui.org/docs/components/navbar#controlled-menu*/
 .custom-navbar header {

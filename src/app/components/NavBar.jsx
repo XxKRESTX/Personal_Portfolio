@@ -35,7 +35,7 @@ export default function App() {
     isMenuOpen={isMenuOpen}
     onMenuOpenChange={setIsMenuOpen}
     isBlurred={false}
-    className="custom-navbar bg-transparent"
+    className="custom-navbar text-white bg-transparent"
     role="navigation"
     aria-label="Main navigation"
   >
