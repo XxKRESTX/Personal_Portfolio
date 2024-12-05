@@ -72,7 +72,7 @@ export default function Hiro() {
               <div className='my-4'>
                 <h2 className="font-piersansmedium text-white text-xl">Design</h2>
                 <p className="text-white font-body text-sm sm:text-base">
-                Before coding, I first designed pages to fit seamlessly across mobile to desktop resolutions. Using tools like Figma, I created low-fidelity mockups to illustrate my initial ideas and ensure a smooth transition to development.</p>
+                Before coding, I first designed pages to fit <span className='text-orange'>seamlessly</span> across <span className='text-orange'>mobile to desktop resolutions</span>. Using tools like <span className='text-orange'>Figma</span>, I created <span className='text-orange'>low-fidelity mockups</span> to illustrate my initial ideas and ensure a smooth transition to development.</p>
               </div>
               <div className="flex flex-col my-4 gap-4">
               <Image
