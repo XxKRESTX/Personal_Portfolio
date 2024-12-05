@@ -1,5 +1,5 @@
 "use client";
-
+//Referenced from https://nextui.org/docs/components/navbar#controlled-menu
 import React, { useState } from "react";
 import {
   Navbar,
@@ -40,9 +40,9 @@ export default function App() {
     aria-label="Main navigation"
   >
       
-      <NavbarContent className="md:hidden pr-3 text-white" justify="center">
+      <NavbarContent className="md:hidden pr-3 text-white focus:outline focus:outline-orange" justify="center">
         <NavbarBrand>
-          <Logo aria-label="Go to homepage" />
+          <Logo aria-label="Go to homepage" className='focus:outline focus:outline-orange' />
         </NavbarBrand>
       </NavbarContent>
 

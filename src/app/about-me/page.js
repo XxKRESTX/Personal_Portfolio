@@ -10,12 +10,7 @@ import Link from 'next/link';
 
 
 export default function Hiro() {
-  const infoItems = [
-    { label: 'Tools', value: 'Figma, HTML, CSS and JavaScript' },
-    { label: 'Timeline', value: 'Oct 2024 - Nov 2024' },
-    { label: 'Members', value: 'Nathan (Designer & Developer), Shixuan (Developer)' },
-    { label: 'Responsibilities', value: 'UI/UX Design & Web Development' },
-  ];
+
 
   return (
     <>
@@ -24,7 +19,7 @@ export default function Hiro() {
           
           <section className="flex flex-col relative mb-20">   
             <NavBar />
-            <div className="flex flex-col justify-center gap-4">
+            <div className="flex flex-col justify-center gap-4 mt-16">
               <h1 className="text-white font-display text-3xl">About Me</h1>
               <TopArrows></TopArrows>
               <p className='text-white font-satoshilight p-4 text-sm sm:text-base lg:leading-loose'>Hi! I&#39;m Nathan, a second-year design student at Simon Fraser University. With a unique blend of front-end development skills and design experience, I bring bold ideas to life in practical, impactful ways. Outside of my studies, I enjoy gaming, badminton, and exploring new mountains to hike. I plan to work in the UX Design space and am passionate about using design as a tool for social impact and am always open to collaborating who share this vision. Let&#39;s explore opportunities to collaborate and make a difference through thoughtful, user-centered design!</p>
